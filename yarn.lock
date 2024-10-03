@@ -415,8 +415,10 @@
     ethereum-cryptography "^2.0.0"
     micro-ftch "^0.3.1"
 
-"@hot-wallet/sdk@../":
-  version "0.6.1"
+"@hot-wallet/sdk@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@hot-wallet/sdk/-/sdk-0.6.3.tgz#bbe7bd1373622d37d24fe7646b5d08b6b13a2e60"
+  integrity sha512-6Ut87GQPNDiGo4vDG1jVZxOrjQnkCaLNmTBfmGB+8UvK2cgErD2kPU/j3E0cvKPVsfkxGyDaNqE35rVPA4aeHw==
   dependencies:
     "@near-js/crypto" "^1.4.0"
     "@near-js/utils" "^1.0.0"
