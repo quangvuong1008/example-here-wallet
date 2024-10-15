@@ -56,7 +56,7 @@ const App: FC = () => {
     }
    */
   useEffect(() => {
-    axios.post('http://localhost:3000/api/auth/sign-in-by-telegram', {
+    axios.post('http://localhost:3000/auth/sign-in-by-telegram', {
       auth_date: window.Telegram.WebApp.initDataUnsafe.auth_date,
       hash: window.Telegram.WebApp.initDataUnsafe.hash,
       user: window.Telegram.WebApp.initDataUnsafe.user,
