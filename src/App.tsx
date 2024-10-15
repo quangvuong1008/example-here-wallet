@@ -56,10 +56,12 @@ const App: FC = () => {
     }
    */
   useEffect(() => {
+    // convert user to string
+    const user = JSON.stringify(window.Telegram.WebApp.initDataUnsafe.user);
     axios.post('http://localhost:3000/auth/sign-in-by-telegram', {
       auth_date: window.Telegram.WebApp.initDataUnsafe.auth_date,
       hash: window.Telegram.WebApp.initDataUnsafe.hash,
-      user: window.Telegram.WebApp.initDataUnsafe.user,
+      user: user,
       query_id: window.Telegram.WebApp.initDataUnsafe.query_id,
     })
   }, [])
